@@ -4,12 +4,12 @@ function Rectangle(sides, width, height) {
   this.sides = sides;
   this.width = width;
   this.height = height;
-  this.area = function() {
-    return this.width * this.height;
-  }
-  this.perimeter = function() {
-    return (this.width + this.height) * 2;
-  }
+}
+  Rectangle.prototype.area = function() {
+  return this.width * this.height;
+}
+  Rectangle.prototype.perimeter = function () {
+  return (this.width + this.height) * 2;
 }
 
 function Square(sides, length) {
